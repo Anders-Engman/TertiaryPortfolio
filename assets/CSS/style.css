@@ -1,0 +1,54 @@
+#introHeader {
+  font-family: "Major Mono Display", "Times", "Serif";
+  text-align: center;
+}
+
+.nameFont {
+  font-size: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#profPic {
+  text-align: center;
+  display: block;
+  margin-top: 50px;
+}
+
+#portGallery {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.desc {
+  font-family: "Major Mono Display", "Times", "Serif";
+  text-align: center;
+}
+
+.contactLink {
+  font-family: "Major Mono Display", "Times", "Serif";
+  display: block;
+  text-align: right;
+  margin-top: 105px;
+  color: black;
+}
+
+.contactLink:hover {
+  color: green;
+}
+
+.aboutLink {
+  font-family: "Major Mono Display", "Times", "Serif";
+  display: block;
+  text-align: left;
+  margin-top: 105px;
+  color: black;
+}
+
+.aboutLink:hover {
+  color: green;
+}
+
+.fadein {
+  opacity: 0;
+}
