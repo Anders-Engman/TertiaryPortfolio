@@ -15,11 +15,6 @@
   margin-top: 50px;
 }
 
-#portGallery {
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
 .desc {
   font-family: "Major Mono Display", "Times", "Serif";
   text-align: center;
@@ -28,13 +23,14 @@
 .contactLink {
   font-family: "Major Mono Display", "Times", "Serif";
   display: block;
+  float: inherit;
   text-align: right;
   margin-top: 105px;
   color: black;
 }
 
 .contactLink:hover {
-  color: green;
+  color: blue;
 }
 
 .aboutLink {
@@ -46,9 +42,89 @@
 }
 
 .aboutLink:hover {
-  color: green;
+  color: blue;
 }
 
-.fadein {
+.gallery {
   opacity: 0;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.gallDisp {
+  height: 500px;
+}
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  border: 0;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: grey;
+  text-align: center !important;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Hide the link that should open and close the navbar on small screens */
+.navbar .icon {
+  display: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.posFix {
+  float: right;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
 }

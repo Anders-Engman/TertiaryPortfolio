@@ -12,17 +12,49 @@
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="assets/CSS/style.css" />
+
+    <script src="https://use.fontawesome.com/f559a00afb.js"></script>
+
     <link
       href="https://fonts.googleapis.com/css?family=Major+Mono+Display"
       rel="stylesheet"
     />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/JavaScript/logic.js"></script>
   </head>
 
   <body>
     <div class="row">
       <div class="col-md-3">
-        <a class="contactLink" href="#">Contact</a>
+        <!-- <a class="contactLink" href="#">Contact</a></div> -->
+        <div class="posFix">
+          <div class="dropdown">
+            <a class="dropbtn contactLink">Contact</a>
+            <div class="dropdown-content">
+              <a
+                href="https://www.linkedin.com/in/anders-engman-6267339b/"
+                target="_blank"
+              >
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                LinkedIn</a
+              >
+              <a href="https://github.com/Anders-Engman" target="_blank">
+                <i class="fa fa-github" aria-hidden="true"></i> GitHub</a
+              >
+              <a href="mailto:anders.p.engman@gmail.com" target="_blank">
+                <span class="glyphicon glyphicon-envelope"></span> Email</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="col-md-6">
@@ -33,9 +65,20 @@
       </div>
 
       <div class="col-md-3">
-        <a class="aboutLink" href="#">About</a>
+        <div class="dropdown">
+          <a class="dropbtn aboutLink">About</a>
+          <div class="dropdown-content">
+            <a href="#"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum in dapibus lacus, ac dictum lectus. Suspendisse aliquet
+              fermentum egestas.</a
+            >
+          </div>
+        </div>
       </div>
     </div>
+
+    <hr />
 
     <div class="row">
       <div class="col-md-3"></div>
@@ -51,12 +94,14 @@
 
     <div class="row"><div class="col-md-12"></div></div>
 
+    <br />
+
     <div class="row">
       <div class="col-md-3"></div>
 
-      <div class="col-md-2">
-        <div class="gallery zoom  " id="portGallery">
-          <div class="desc zoom">Doom Coffee</div>
+      <div class="col-md-2 gallDisp">
+        <div class="gallery">
+          <div class="desc">Doom Coffee</div>
           <a target="_blank" href="#">
             <img
               src="assets/images/DoomCoffee.gif"
@@ -68,9 +113,9 @@
         </div>
       </div>
 
-        <div class="col-md-2">
-          <div class="gallery zoom  " id="portGallery">
-          <div class="desc zoom">Steve Harvey</div>
+      <div class="col-md-2 gallDisp">
+        <div class="gallery">
+          <div class="desc">Steve Harvey</div>
           <a target="_blank" href="#">
             <img
               src="assets/images/SHPlaceholder.jpg"
@@ -79,20 +124,29 @@
               height="210"
             />
           </a>
-          </div>
         </div>
+      </div>
 
-        <div class="col-md-2">
-          <div class="gallery zoom  " id="portGallery">
-          <div class="desc zoom">Wat</div>
+      <div class="col-md-2 gallDisp">
+        <div class="gallery">
+          <div class="desc">Wat</div>
           <a target="_blank" href="#">
-            <img src="assets/images/wat.gif" alt="wat" width="250" height="210" />
+            <img
+              src="assets/images/wat.gif"
+              alt="wat"
+              width="250"
+              height="210"
+            />
           </a>
-          </div>
         </div>
-
       </div>
     </div>
 
+    <div class="navbar" id="myNavbar">
+      <a>Copyright 2019</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
   </body>
 </html>
